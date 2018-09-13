@@ -26,7 +26,100 @@
 */
 
 html {
-    background-color: goldenrod;
+    background-color: rgb(153, 44, 1);
 }
 
-body {}
+body {
+    background-color: rgb(228, 210, 210);
+}
+
+header>nav a {
+    background-color: darkslateblue;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 0px 10px 0px;
+}
+
+header>nav a:visited,
+header>nav a:link {
+    color: rgb(202, 169, 22);
+}
+
+header>nav a:active,
+header>nav a:hover {
+    background-color: grey;
+}
+
+section#rightcol h2 {
+    background-color: grey;
+    text-align: center;
+    font-family: Champagne;
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section#rightcol {
+    background-color: bisque;
+    padding-bottom: 6em;
+}
+
+section#rightcol ul a {
+    text-decoration: none;
+}
+
+section#rightcol ul li {
+    text-align: center;
+    padding-right: 2em;
+}
+
+section#rightcol ul {
+    list-style-type: none;
+}
+
+section#rightcol ul a:link,
+section#rightcol ul a:visited {
+    color: brown;
+}
+
+section#rightcol ul a:active,
+section#rightcol ul a:hover {
+    color: dimgrey;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+blockquote {
+    color: brown;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 30px 20px 30px 20px;
+    background-color: grey;
+    margin-top: 5em;
+}
+
+footer {
+    text-align: center;
+    background-color: grey;
+}
+
+section>h1 {
+    font-family: Champagne;
+    font-size: 55px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    font-size: 17.5px;
+    text-indent: 20px;
+}
