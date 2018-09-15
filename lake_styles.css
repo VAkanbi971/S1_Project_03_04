@@ -1,5 +1,5 @@
 ﻿@charset "utf-8";
-
+/* I began by adding the font fac so that i could have a custom font using the font family eleent and the src element.*/
 @font-face {
     font-family: Champagne;
     src: url('cac_champagne.woff') format('woff'),
@@ -24,22 +24,23 @@
    Filename: lake_styles.css
 
 */
+/* thorughout this whole css age i jump around alot just a heads up. I started with html to set the background color to a nice browish kind of shade. */
 
 html {
     background-color: rgb(153, 44, 1);
 }
-
+/* From there i use the background-color element to change the color of the body's background. */
 body {
     background-color: rgb(228, 210, 210);
 }
-
+/* I used this style rule to change the a(links) in the html to show up in a set color of the text to white (due to a later style the color white is nt actually shown) and to change the background of the links to a type of blue and removed the underlining. I finaly added padding to make it look more spaced.*/
 header>nav a {
     background-color: darkslateblue;
     color: whitesmoke;
     text-decoration: none;
     padding: 10px 0px 10px 0px;
 }
-
+/* IN these i made it so that the link would look uniform and would have a set color of if it was cicked just sitting there or had already been visited. */
 header>nav a:visited,
 header>nav a:link {
     color: rgb(202, 169, 22);
@@ -49,7 +50,7 @@ header>nav a:active,
 header>nav a:hover {
     background-color: grey;
 }
-
+/* With this one i changed how the h2 elemet would look inside of the section element witht the id of rightcol. I increased the font size i changed thebackgroud color padding, the look of the text, text color, and the alignment */
 section#rightcol h2 {
     background-color: grey;
     text-align: center;
@@ -58,25 +59,25 @@ section#rightcol h2 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+/* Here i just set the rightcolum background color and added some padding to make sure the colum hit the bottom */
 section#rightcol {
     background-color: bisque;
     padding-bottom: 6em;
 }
-
+/* I wanted the unordered list in this section to losw ts text decorations so i used this to take it away. */
 section#rightcol ul a {
     text-decoration: none;
 }
-
+/* I just alligned the text and i added padding tot he right so it would look better in my opinion. */
 section#rightcol ul li {
     text-align: center;
     padding-right: 2em;
 }
-
+/* Removed the buleted list */
 section#rightcol ul {
     list-style-type: none;
 }
-
+/* Same as before i just made the link look uniformand beter in terms of interaction */
 section#rightcol ul a:link,
 section#rightcol ul a:visited {
     color: brown;
@@ -86,7 +87,7 @@ section#rightcol ul a:active,
 section#rightcol ul a:hover {
     color: dimgrey;
 }
-
+/* I added quotations to the block quote increased the size, changed the color, addded some padding, changed the hieght of the line, the background color, and i even added a margin so that the box ould move down kind of like with padding. */
 blockquote::before {
     content: open-quote;
 }
@@ -103,12 +104,12 @@ blockquote {
     background-color: grey;
     margin-top: 5em;
 }
-
+/* I did the footer by centeralizing the text and changing the background color  */
 footer {
     text-align: center;
     background-color: grey;
 }
-
+/* IN the section element i changed the font of the text the size to make it easier to read andded a little bit of padding to the left to move it of of the edge of the body.*/
 section>h1 {
     font-family: Champagne;
     font-size: 55px;
@@ -116,10 +117,40 @@ section>h1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+/* I adjusted the way the font looks the padding n the text the size and i added an indent to make it look more professional. */
 body p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-left: 10px;
     font-size: 17.5px;
     text-indent: 20px;
+}
+/* Just edited the background color of the side element */
+body aside{
+    background-color: grey;
+}
+/* I made the h1 look like a title by chnagng the font the size, color, aligning the text to the center, chnaging the background color, and adding padding. */
+body aside h1 {
+    color: brown;
+    font-size: 22px;
+    text-align: center;
+    background-color: blueviolet;
+    padding: 10px 0px 10px 0px;
+}
+/* Just a change to the font size */
+body aside h2 {
+    font-size: 18px;
+}
+/* Just a chnage to the font size */
+body aside p {
+    font-size: 15px;
+}
+/* ONce again just making the links more visually apealing and in this case stand out */
+body aside li a:link,
+body aside li a:visited {
+    color: brown;
+}
+
+body aside li a:active,
+body aside li a:hover {
+    color: cadetblue;
 }
